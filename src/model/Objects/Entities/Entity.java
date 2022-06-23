@@ -5,4 +5,10 @@ public abstract class Entity {
     int x;
     int y;
     int health;
+
+    public Entity() {
+        x = 0;
+        y = 0;
+        health = 100;
+    }
 }
