@@ -10,16 +10,15 @@ to package these is:
 package model.Objects.entities
 substitute in folder names
 
+should Bosses be a passive or Aggressive entity. 
+logic would be that passive only attacks when attacked while aggressive will attack once close enough to player
+
+
 Objects
     entities
-        a
-            (inherits from entity)
-            entity attribute 1
-            entity attribute 2
-            entity attribute 3
-            etc...
-        b
-        c
+        a Passive
+        b Aggressive
+        c Friendly
     items
         a
         b
