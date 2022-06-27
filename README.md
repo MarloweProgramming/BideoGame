@@ -14,6 +14,17 @@ substitute in folder names
 should Bosses be a passive or Aggressive entity?  
 logic would be that passive only attacks when attacked while aggressive will attack once close enough to player  
 
+class files start with capital letters: EG Entity.java  
+folders/directories start with lowercase letters: EG passiveEntities  
+
+## Build Commands
+gradle install  
+arun  
+  
+gradle run  
+
+aclean  
+
 
 ## Objects  
     entities  

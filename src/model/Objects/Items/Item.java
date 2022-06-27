@@ -1,15 +1,18 @@
-package model.items;
+package model.objects.items;
 
-public abstract class Item {
+import model.objects.Object;
+
+public abstract class Item extends Object {
     // generic class all Items will inherit from
-    int x;
-    int y;
     int durability;
 
     public Item() {
+        super();
         durability = 100;
-        x = 0;
-        y = 0;
+    }
+    public Item(int x, int y) {
+        super(x, y);
+        durability = 100;
     }
 
 }

@@ -18,7 +18,7 @@ import java.io.IOException;
 public class MainWindow {
 
     @FXML
-    VBox MainVBox;
+    VBox MainVBox; // may be helpful if item shop is created
 
     @FXML
     public void onNewGameClicked(ActionEvent event) throws IOException {
