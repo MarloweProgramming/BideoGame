@@ -1,5 +1,5 @@
-package model.Entities.FriendlyEntities;
-import model.Entities.*;
+package model.entities.friendlyEntities;
+import model.entities.*;
 
 public abstract class FriendlyEntity extends Entity {
 

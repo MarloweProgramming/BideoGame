@@ -1,4 +1,4 @@
-package model.Entities.AggressiveEntities;
+package model.entities.aggressiveEntities;
 
 public class Bandit extends AggressiveEntity {
 

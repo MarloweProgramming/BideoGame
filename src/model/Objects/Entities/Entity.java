@@ -1,4 +1,4 @@
-package model.Entities;
+package model.entities;
 
 public abstract class Entity {
     // basic class all entities will inherit from

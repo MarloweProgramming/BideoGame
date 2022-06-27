@@ -49,7 +49,6 @@ public class MainWindow {
 
     }
     // method that runs when the app is loaded
-    // load basic graphics and button creation here
     @FXML
     public void initialize() {
         

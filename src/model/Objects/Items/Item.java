@@ -1,4 +1,4 @@
-package model.Items;
+package model.items;
 
 public abstract class Item {
     // generic class all Items will inherit from

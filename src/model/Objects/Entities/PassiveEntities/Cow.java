@@ -1,4 +1,4 @@
-package model.Entities.PassiveEntities;
+package model.entities.passiveEntities;
 
 public class Cow extends PassiveEntity {
 

@@ -1,4 +1,4 @@
-package model.Entities.FriendlyEntities;
+package model.entities.friendlyEntities;
 
 public class WanderingTrader extends FriendlyEntity {
 
