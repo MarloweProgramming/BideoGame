@@ -2,10 +2,14 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
 
-<VBox fx:controller="MainWindow" xmlns:fx="http://javafx.com/fxml"  stylesheets="@MainWindow.css"
-    spacing="10" prefHeight="400" prefWidth="250">
+<VBox fx:controller="MainWindow" xmlns:fx="http://javafx.com/fxml"  stylesheets="@MainWindow.css" fx:id="MainVBox" alignment="center"
+    spacing="25" prefWidth="1024" prefHeight="576">
 
-    <Button onAction="#onGreetClicked" text="Greet"  />
+    <Button onAction="#onNewGameClicked" text="New Game"  />
+    <Button onAction="#onLoadGameClicked" text="Load Game?"  />
+    <Button onAction="#onSettingsClicked" text="Settings"  />
+    <Button onAction="#onCreditsClicked" text="Credits"  />
 
 </VBox>

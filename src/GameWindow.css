@@ -2,7 +2,7 @@
     -fx-padding: 10; /* Add a small padding around the window */
     -fx-font-family: 'Helvetica', Arial, sans-serif;
     -fx-background-image: url("./graphics/background.jpg");
-    -fx-background-size: 1024 576; 
+    -fx-background-size: 1920 1080; 
 }
 
 /* for Macs */
