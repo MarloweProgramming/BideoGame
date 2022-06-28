@@ -1,5 +1,5 @@
 package model.objects.entities.aggressiveEntities;
-import model.objects.entities.*;
+import model.objects.entities.Entity;
 
 public abstract class AggressiveEntity extends Entity {
 

@@ -1,5 +1,5 @@
 package model.objects.entities.passiveEntities;
-import model.objects.entities.*;
+import model.objects.entities.Entity;
 
 public abstract class PassiveEntity extends Entity {
 
