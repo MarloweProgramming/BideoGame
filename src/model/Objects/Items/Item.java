@@ -4,7 +4,7 @@ import model.objects.Object;
 
 public abstract class Item extends Object {
     // generic class all Items will inherit from
-    int durability;
+    private int durability;
 
     public Item() {
         super();
@@ -15,4 +15,10 @@ public abstract class Item extends Object {
         durability = 100;
     }
 
+    public int getDurability() {
+        return this.durability;
+    }
+    public void setDurability(int durability) {
+        this.durability = durability;
+    }
 }
