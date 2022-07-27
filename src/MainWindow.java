@@ -25,6 +25,16 @@ public class MainWindow {
 
     @FXML
     VBox MainVBox; // may be helpful if texture pack shop is implemented
+    
+    Menu m = new Menu(); // not sure if this will ever be needed or used for anything
+
+
+    // method that runs when the app is loaded
+    @FXML
+    public void initialize() {
+        
+    }
+
 
     @FXML
     public void onNewGameClicked(ActionEvent event) throws IOException {
@@ -78,9 +88,6 @@ public class MainWindow {
             }
         });
 
-        Menu m = new Menu();
-
-
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
@@ -101,10 +108,5 @@ public class MainWindow {
     @FXML
     public void onCreditsClicked(ActionEvent event) {
 
-    }
-    // method that runs when the app is loaded
-    @FXML
-    public void initialize() {
-        
     }
 }

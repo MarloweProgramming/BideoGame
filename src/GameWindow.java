@@ -8,9 +8,17 @@ import javafx.scene.image.Image;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 
+// to make movements smooth
+import java.awt.event.*;
+import javax.swing.*;
+
 // model imports below
 import model.worldObjects.*;
-import model.objects.entities.*;
+import model.objects.entities.aggressiveEntities.*;
+import model.objects.entities.passiveEntities.*;
+import model.objects.entities.friendlyEntities.*;
+import model.objects.entities.Entity;
+import model.objects.entities.Player;
 
 public class GameWindow {
 
@@ -23,17 +31,81 @@ public class GameWindow {
 
     @FXML
     public void initialize() {
-        p = new Player(0, 0);
+        w = new World();
+        p = w.getPlayer();
+
+        spawnPlayer();
+    }
+
+    @FXML
+    void spawnPlayer() {
 
         ImageView imgView = new ImageView(new Image("graphics/player.png"));
         imgView.setFitWidth(300);
         imgView.setFitHeight(300);
+
         imgView.layoutXProperty().bind(p.xProperty());
         imgView.layoutYProperty().bind(p.yProperty());
+
         imgView.setUserData(p);
         gamePane.getChildren().add(imgView);
     }
 
+    @FXML
+    void spawnPlayer(int x, int y) {
+        p = new Player(x, y);
+
+        ImageView imgView = new ImageView(new Image("graphics/player.png"));
+        imgView.setFitWidth(300);
+        imgView.setFitHeight(300);
+
+        imgView.layoutXProperty().bind(p.xProperty());
+        imgView.layoutYProperty().bind(p.yProperty());
+
+        imgView.setUserData(p);
+        gamePane.getChildren().add(imgView);
+    }
+
+
+
+    // may be needed in load chunk method
+    @FXML
+    void spawnPassiveEntities(Chunk c) {
+        for (Entity e : c.getEntities()) {
+            if (e instanceof PassiveEntity) {
+
+            }
+        }
+    }
+
+    @FXML
+    void spawnFriendlyEntities(Chunk c) {
+        for (Entity e : c.getEntities()) {
+            if (e instanceof FriendlyEntity) {
+
+            }
+        }
+    }
+
+    @FXML
+    void spawnAggressiveEntities(Chunk c) {
+        for (Entity e : c.getEntities()) {
+            if (e instanceof AggressiveEntity) {
+
+            }
+        }
+    }
+    // end of may be needed in load chunk method
+
+    @FXML
+    void loadChunk(int row, int col) {
+
+    }
+
+    // @FXML
+    // void spawnBoss() {
+
+    // }
     public static void moveUp() {
         // p.moveUp();
         p.setMoveUp(true);
